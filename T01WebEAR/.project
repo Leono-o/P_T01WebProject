@@ -4,7 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>T01Web</project>
-		<project>T01WebEJB</project>
+		<project>T01EJB</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
