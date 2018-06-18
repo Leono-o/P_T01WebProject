@@ -15,7 +15,7 @@ public class LoginAction extends T01AbstractAction {
     public void doE00(ApplCommonBean applCommonBean) {
 
         LoginForm inForm = (LoginForm)applCommonBean.getInFormClone();
-        LoginForm outForm = LoginDelegate.doE00(inForm); 
+        LoginFrom outForm = LoginDelegate.doE00(inForm); 
 
         applCommonBean.setOutForm("LoginForm", outForm);
         applCommonBean.setForward(Huamian.LOGIN);
@@ -30,7 +30,7 @@ public class LoginAction extends T01AbstractAction {
     public void doE01(ApplCommonBean applCommonBean) {
 
         LoginForm inForm = (LoginForm)applCommonBean.getInFormClone();
-        LoginForm outForm = LoginDelegate.doE01(inForm); 
+        LoginFrom outForm = LoginDelegate.doE01(inForm); 
 
         applCommonBean.setOutForm("LoginForm", outForm);
         applCommonBean.setForward(Huamian.LOGIN);

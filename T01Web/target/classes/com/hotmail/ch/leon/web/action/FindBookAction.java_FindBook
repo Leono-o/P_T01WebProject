@@ -15,7 +15,7 @@ public class FindBookAction extends T01AbstractAction {
     public void doE01(ApplCommonBean applCommonBean) {
 
         FindBookForm inForm = (FindBookForm)applCommonBean.getInFormClone();
-        FindBookForm outForm = FindBookDelegate.doE01(inForm); 
+        FindBookFrom outForm = FindBookDelegate.doE01(inForm); 
 
         applCommonBean.setOutForm("FindBookForm", outForm);
         applCommonBean.setForward(Huamian.FINDBOOK);
@@ -30,7 +30,7 @@ public class FindBookAction extends T01AbstractAction {
     public void doE02(ApplCommonBean applCommonBean) {
 
         FindBookForm inForm = (FindBookForm)applCommonBean.getInFormClone();
-        FindBookForm outForm = FindBookDelegate.doE02(inForm); 
+        FindBookFrom outForm = FindBookDelegate.doE02(inForm); 
 
         applCommonBean.setOutForm("FindBookForm", outForm);
         applCommonBean.setForward(Huamian.FINDBOOK);
@@ -45,7 +45,7 @@ public class FindBookAction extends T01AbstractAction {
     public void doE03(ApplCommonBean applCommonBean) {
 
         FindBookForm inForm = (FindBookForm)applCommonBean.getInFormClone();
-        FindBookForm outForm = FindBookDelegate.doE03(inForm); 
+        FindBookFrom outForm = FindBookDelegate.doE03(inForm); 
 
         applCommonBean.setOutForm("FindBookForm", outForm);
         applCommonBean.setForward(Huamian.FINDBOOK);
