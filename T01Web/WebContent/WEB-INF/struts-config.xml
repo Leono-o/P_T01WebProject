@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+"http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+<struts-config>
+
+    
+<form-beans>
+<form-bean name="LoginForm" type="com.hotmail.ch.leon.web.form.LoginForm"/>
+<form-bean name="JiansuoForm" type="com.hotmail.ch.leon.web.form.JiansuoForm"/>
+<form-bean name="FindBookForm" type="com.hotmail.ch.leon.web.form.FindBookForm"/>
+</form-beans>
+
+<action-mappings>
+<action path="/WelcomeAction" type="com.hotmail.ch.leon.web.action.WelcomeAction" input="/WEB-INF/jsp/Welcome.jsp">
+	<forward name="Login" path="/WEB-INF/jsp/Login.jsp"/> 
+</action>
+<action path="/LoginAction" type="com.hotmail.ch.leon.web.action.LoginAction" name="LoginForm" input="/WEB-INF/jsp/Login.jsp">
+	<forward name="JianSuo" path="/WEB-INF/jsp/JianSuo.jsp"/> 
+	<forward name="FindBook" path="/WEB-INF/jsp/FindBook.jsp"/> 
+</action>
+<action path="/JiansuoAction" type="com.hotmail.ch.leon.web.action.JiansuoAction" name="JiansuoForm" input="/WEB-INF/jsp/Jiansuo.jsp">
+	<forward name="JianSuo" path="/WEB-INF/jsp/JianSuo.jsp"/> 
+</action>
+<action path="/FindBookAction" type="com.hotmail.ch.leon.web.action.FindBookAction" name="FindBookForm" input="/WEB-INF/jsp/FindBook.jsp">
+	<forward name="FindBook" path="/WEB-INF/jsp/FindBook.jsp"/> 
+</action>
+</action-mappings>
+
+<message-resources parameter="Message" />
+
+</struts-config>
