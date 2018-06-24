@@ -7,42 +7,42 @@ import org.apache.struts.util.LabelValueBean;
 
 public class LoginForm extends T01AbstractForm {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /** 用户名 */
-    private String userName = null;
-
-
-    /** 密码 */
-    private String pswd = null;
+	/** 用户名 */
+	private String userName = null;
 
 
-    /** 用户名 的取得 */
-    public String getUserName() {
-        return userName;
-    }
+	/** 密码 */
+	private String pswd = null;
 
 
-    /** 用户名 的赋值 */
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+	/** 用户名 的取得 */
+	public String getUserName() {
+		return userName;
+	}
 
 
-    /** 密码 的取得 */
-    public String getPswd() {
-        return pswd;
-    }
+	/** 用户名 的赋值 */
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 
 
-    /** 密码 的赋值 */
-    public void setPswd(String pswd) {
-        this.pswd = pswd;
-    }
+	/** 密码 的取得 */
+	public String getPswd() {
+		return pswd;
+	}
 
-    @Override
-    public String getClassName() {
-        return "LoginForm";
-    }
+
+	/** 密码 的赋值 */
+	public void setPswd(String pswd) {
+		this.pswd = pswd;
+	}
+
+	@Override
+	public String getClassName() {
+		return "LoginForm";
+	}
 
 }

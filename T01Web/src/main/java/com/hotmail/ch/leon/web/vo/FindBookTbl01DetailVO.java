@@ -3,75 +3,75 @@ package com.hotmail.ch.leon.web.vo;
 
 public class FindBookTbl01DetailVO extends T01AbstractVO {
 
-    /** Ñ¡Ôñ */
-    private boolean select = false;
+	/** é€‰æ‹© */
+	private boolean select = false;
 
 
-    /** ÊéºÅ */
-    private String bookID = null;
+	/** ä¹¦å· */
+	private String bookID = null;
 
 
-    /** ÖÖÀà */
-    private String bookType = null;
+	/** ç§ç±» */
+	private String bookType = null;
 
 
-    /** ÊéÃû */
-    private String bookName = null;
+	/** ä¹¦å */
+	private String bookName = null;
 
 
-    /** Äê·İ */
-    private String produceYear = null;
+	/** å¹´ä»½ */
+	private String produceYear = null;
 
 
-    /** Ñ¡Ôñ µÄÈ¡µÃ */
-    public boolean isSelect() {
-        return select;
-    }
+	/** é€‰æ‹© çš„å–å¾— */
+	public boolean isSelect() {
+		return select;
+	}
 
-    /** Ñ¡Ôñ µÄ¸³Öµ */
-    public void setSelect(boolean select) {
-        this.select = select;
-    }
+	/** é€‰æ‹© çš„èµ‹å€¼ */
+	public void setSelect(boolean select) {
+		this.select = select;
+	}
 
-    /** ÊéºÅ µÄÈ¡µÃ */
-    public String getBookID() {
-        return bookID;
-    }
+	/** ä¹¦å· çš„å–å¾— */
+	public String getBookID() {
+		return bookID;
+	}
 
-    /** ÊéºÅ µÄ¸³Öµ */
-    public void setBookID(String bookID) {
-        this.bookID = bookID;
-    }
+	/** ä¹¦å· çš„èµ‹å€¼ */
+	public void setBookID(String bookID) {
+		this.bookID = bookID;
+	}
 
-    /** ÖÖÀà µÄÈ¡µÃ */
-    public String getBookType() {
-        return bookType;
-    }
+	/** ç§ç±» çš„å–å¾— */
+	public String getBookType() {
+		return bookType;
+	}
 
-    /** ÖÖÀà µÄ¸³Öµ */
-    public void setBookType(String bookType) {
-        this.bookType = bookType;
-    }
+	/** ç§ç±» çš„èµ‹å€¼ */
+	public void setBookType(String bookType) {
+		this.bookType = bookType;
+	}
 
-    /** ÊéÃû µÄÈ¡µÃ */
-    public String getBookName() {
-        return bookName;
-    }
+	/** ä¹¦å çš„å–å¾— */
+	public String getBookName() {
+		return bookName;
+	}
 
-    /** ÊéÃû µÄ¸³Öµ */
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
-    }
+	/** ä¹¦å çš„èµ‹å€¼ */
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
 
-    /** Äê·İ µÄÈ¡µÃ */
-    public String getProduceYear() {
-        return produceYear;
-    }
+	/** å¹´ä»½ çš„å–å¾— */
+	public String getProduceYear() {
+		return produceYear;
+	}
 
-    /** Äê·İ µÄ¸³Öµ */
-    public void setProduceYear(String produceYear) {
-        this.produceYear = produceYear;
-    }
+	/** å¹´ä»½ çš„èµ‹å€¼ */
+	public void setProduceYear(String produceYear) {
+		this.produceYear = produceYear;
+	}
 
 
 }

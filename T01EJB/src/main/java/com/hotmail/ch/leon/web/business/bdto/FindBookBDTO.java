@@ -1,69 +1,80 @@
 package com.hotmail.ch.leon.web.business.bdto;
 
 import java.util.List;
-
 import com.hotmail.ch.leon.web.business.apl.bdto.LabelValueBDTO;
-
 
 public class FindBookBDTO {
 
-	private String searchType	 = null;							
-	private String bookType		 = null;	
+	/** 类型 */
+	private String searchType = null;
+
+	/** 种类 */
+	private String bookType = null;
+
 	private List<LabelValueBDTO> bookType_list = null;
-	private String produceYear	 = null;							
-	private String bookName		 = null;
-	
-	private List<FindBookResultSubBDTO> findBookResultSubBDTOList = null;
 
-	public String getSearchType() {
-		return searchType;
-	}
+	/** 出版年份 */
+	private String produceYear = null;
 
-	public void setSearchType(String searchType) {
-		this.searchType = searchType;
-	}
+	/** 书名 */
+	private String bookName = null;
 
-	public String getBookType() {
-		return bookType;
-	}
+	private List<FindBookResultSubBDTO> searchRstList = null;
 
-	public void setBookType(String bookType) {
-		this.bookType = bookType;
-	}
+    /** 类型 的取得 */
+    public String getSearchType() {
+        return searchType;
+    }
 
-	public List<LabelValueBDTO> getBookType_list() {
-		return bookType_list;
-	}
+    /** 类型 的赋值 */
+    public void setSearchType(String searchType) {
+        this.searchType = searchType;
+    }
 
-	public void setBookType_list(List<LabelValueBDTO> bookType_list) {
-		this.bookType_list = bookType_list;
-	}
+    /** 种类 的取得 */
+    public String getBookType() {
+        return bookType;
+    }
 
-	public String getProduceYear() {
-		return produceYear;
-	}
+    /** 种类 的赋值 */
+    public void setBookType(String bookType) {
+        this.bookType = bookType;
+    }
 
-	public void setProduceYear(String produceYear) {
-		this.produceYear = produceYear;
-	}
+    public List<LabelValueBDTO> getBookType_list() {
+        return bookType_list;
+    }
 
-	public String getBookName() {
-		return bookName;
-	}
+    public void setBookType_list(List<LabelValueBDTO> bookType_list) {
+        this.bookType_list = bookType_list;
+    }
 
-	public void setBookName(String bookName) {
-		this.bookName = bookName;
-	}
+    /** 出版年份 的取得 */
+    public String getProduceYear() {
+        return produceYear;
+    }
 
-	public List<FindBookResultSubBDTO> getFindBookResultSubBDTOList() {
-		return findBookResultSubBDTOList;
-	}
+    /** 出版年份 的赋值 */
+    public void setProduceYear(String produceYear) {
+        this.produceYear = produceYear;
+    }
 
-	public void setFindBookResultSubBDTOList(List<FindBookResultSubBDTO> findBookResultSubBDTOList) {
-		this.findBookResultSubBDTOList = findBookResultSubBDTOList;
-	}
+    /** 书名 的取得 */
+    public String getBookName() {
+        return bookName;
+    }
 
-	
-	
+    /** 书名 的赋值 */
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public List<FindBookResultSubBDTO> getSearchRstList() {
+        return searchRstList;
+    }
+
+    public void setSearchRstList(List<FindBookResultSubBDTO> searchRstList) {
+        this.searchRstList = searchRstList;
+    }
 
 }
